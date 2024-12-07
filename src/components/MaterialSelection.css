@@ -1,0 +1,58 @@
+.material-grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.material-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Автоматическое заполнение колонок */
+  gap: 20px; /* Расстояние между карточками */
+  justify-items: center; /* Центрирует карточки по горизонтали */
+  width: 100%;
+  max-width: 800px; /* Максимальная ширина для контейнера */
+  margin: 0 auto; /* Центрирование контейнера по горизонтали */
+  box-sizing: border-box;
+}
+
+.material-card {
+  background-color: #444;
+  border: 2px solid #888;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 150px;
+  min-height: 150px;
+  box-sizing: border-box;
+  overflow: hidden; /* Прячем выходящее за границы содержимое */
+}
+
+.material-card.selected {
+  border-color: #007bff;
+  transform: scale(1.05);
+}
+
+.material-image {
+  width: 70%;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 17px; /* Увеличьте размер шрифта, чтобы текст был виден */
+  line-height: 1.2; /* Высота строки для управления межстрочным интервалом */
+  color: #f0f0f0; /* Цвет текста, который будет виден на тёмном фоне */
+  word-wrap: break-word; /* Переносит длинные слова на новую строку */
+  text-align: center; /* Центрирует текст по горизонтали */
+}

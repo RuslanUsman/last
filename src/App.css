@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #22380d; /* Тёмный фон для всей страницы */
+  color: #e9f0c8; /* Цвет текста для контраста */
+  font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgba(40, 44, 52, 0); /* Полупрозрачный фон */
+  min-height: 60px; /* Установите высоту заголовка по вашему желанию */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  position: static; /* Статическая позиция */
+  z-index: 1000; /* Можно оставить, если необходимо */
+}
+
+.App-content {
+  margin-top: 0px; /* Отступ, чтобы контент не перекрывался заголовком */
+}
+
+/*button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}*/
+
